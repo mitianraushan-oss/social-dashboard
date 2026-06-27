@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>You're All Set!</title>
+  <link rel="stylesheet" href="global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .closing-title {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 800;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.15;
+    }
+    .closing-subtitle {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+    .link-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      padding: 32px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .link-card-label {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .link-card-label .material-icons {
+      font-size: 20px;
+    }
+    .footer-text {
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      color: var(--text-muted);
+      margin-top: 48px;
+    }
+    .check-icon-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FC4C02, #E21836);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .check-icon-circle .material-icons {
+      font-size: 44px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide" style="align-items: center; justify-content: center; padding: 64px 80px;">
+
+    <!-- Check icon -->
+    <div class="check-icon-circle" aria-hidden="true">
+      <span class="material-icons">check</span>
+    </div>
+
+    <!-- Title -->
+    <div class="closing-title" style="text-align: center;">You're All Set!</div>
+    <div class="closing-subtitle" style="text-align: center;">Your workouts are now on Strava.</div>
+
+    <!-- Two cards side by side -->
+    <div style="display: flex; gap: 32px; margin-top: 48px; width: 100%; max-width: 860px;">
+      <!-- Left card: Tool -->
+      <div class="link-card">
+        <div class="link-card-label">
+          <span class="material-icons" style="color: var(--accent-strava);">link</span>
+          Tool
+        </div>
+        <div class="url-box">https://mapmyrun-to-strava.onrender.com/</div>
+      </div>
+      <!-- Right card: Source Code -->
+      <div class="link-card">
+        <div class="link-card-label">
+          <span class="material-icons" style="color: var(--primary);">code</span>
+          Source Code
+        </div>
+        <div class="url-box">https://github.com/mitianraushan-oss/mapmyrun-to-strava</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-text">Built with love for the running community</div>
+
+  </div>
+</body>
+</html>

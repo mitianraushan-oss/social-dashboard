@@ -1,0 +1,65 @@
+{
+  "design": {
+    "title": "MapMyRun to Strava Walkthrough",
+    "style_name": "Clean Modern Fitness Tutorial",
+    "palette": {
+      "background": "#FAFAFA",
+      "primary": "#1A1A2E",
+      "accent": "#FC4C02"
+    },
+    "typography": {
+      "heading": "Inter",
+      "body": "Inter",
+      "numeric": "JetBrains Mono"
+    },
+    "reference": "Strava website clean modern feel with orange/red fitness accents"
+  },
+  "global_css_path": "/home/z/my-project/download/slides/global.css",
+  "slides_dir": "/home/z/my-project/download/slides",
+  "language": "en",
+  "speaker_notes": "none",
+  "slides": [
+    {
+      "title": "Cover",
+      "layout": "cover",
+      "output_path": "/home/z/my-project/download/slides/slide_01.html",
+      "task_brief": "COVER SLIDE — Title: 'MapMyRun to Strava'. Subtitle: 'A Step-by-Step Guide to Transfer Your Workouts'. Include two brand tags: 'MapMyRun' in red pill (#E21836) and 'Strava' in orange pill (#FC4C02). Bottom area: show the tool URL in a monospace url-box: 'https://mapmyrun-to-strava.onrender.com/'. Use the MapMyRun app screenshot image (https://sfile.chatglm.cn/images-ppt/070f073c6e9c.jpg) as a small decorative element on the right side. Layout: left-aligned text block on the left half, image on the right half. Clean white card feel with subtle border."
+    },
+    {
+      "title": "Step 1 - Get Your MapMyRun Cookies",
+      "layout": "split text+image",
+      "output_path": "/home/z/my-project/download/slides/slide_02.html",
+      "task_brief": "STEP SLIDE — Large step number '01' in gradient (orange-to-red). Title: 'Get Your MapMyRun Cookies'. Left side: instruction card with 3 steps: 1) 'Go to mapmyrun.com and log in to your account' 2) 'Right-click anywhere on the page and select Inspect (or press F12)' 3) 'Go to the Application tab > Cookies > copy all cookie values'. Right side: use the browser cookies screenshot image (https://sfile.chatglm.cn/images-ppt/4c32d5e96a29.png) as a visual showing the DevTools cookies panel. Add a red tip-box at bottom: 'Make sure you are logged in — cookies expire if you log out or the session ends.' Include a MapMyRun tag pill."
+    },
+    {
+      "title": "Step 2 - Paste Cookies & Pick Date Range",
+      "layout": "two-column",
+      "output_path": "/home/z/my-project/download/slides/slide_03.html",
+      "task_brief": "STEP SLIDE — Large step number '02' in gradient. Title: 'Paste Cookies & Select Your Date Range'. Left column: instruction card with 3 steps: 1) 'Open https://mapmyrun-to-strava.onrender.com/ in your browser' 2) 'Paste your copied cookies into the input field on the page' 3) 'Select a date range using the From and To date pickers to choose which workouts to export'. Right column: a mockup-style card showing a simplified visual representation of the tool's interface — a text input labeled 'Paste your cookies here' and two date pickers labeled 'From' and 'To', styled with the accent colors. Add a tip-box: 'You can export all workouts by leaving the date range empty.' Include a Strava tag pill."
+    },
+    {
+      "title": "Step 3 - Download CSV First",
+      "layout": "split text+image",
+      "output_path": "/home/z/my-project/download/slides/slide_04.html",
+      "task_brief": "STEP SLIDE — Large step number '03' in gradient. Title: 'Download Your Workouts as CSV'. Left side: instruction card with 3 steps: 1) 'After pasting cookies and selecting dates, click the Download CSV button' 2) 'This fetches your workout list from MapMyRun's servers — wait for it to process' 3) 'A CSV file will be saved to your downloads folder with all your workout metadata'. Right side: a styled visual card showing a CSV file icon with sample data rows like 'date, workout_type, distance, duration' to give users a preview of what the CSV looks like. Add a tip-box: 'Download CSV first — this is required before you can generate TCX files.' Include both MapMyRun and Strava tag pills."
+    },
+    {
+      "title": "Step 4 - Download TCX Files",
+      "layout": "split text+image",
+      "output_path": "/home/z/my-project/download/slides/slide_05.html",
+      "task_brief": "STEP SLIDE — Large step number '04' in gradient. Title: 'Download TCX Files for Strava'. Left side: instruction card with 3 steps: 1) 'Once the CSV is ready, click the Download TCX button on the tool page' 2) 'The tool converts your workout data into TCX format — the standard format Strava accepts' 3) 'Each workout becomes a separate .tcx file, downloaded as a ZIP archive'. Right side: use the TCX/GPS data chart image (https://sfile.chatglm.cn/images-ppt/b135673ceebf.png) to show what rich data TCX files preserve (elevation, speed, heart rate). Add a tip-box: 'TCX files include GPS routes, pace, elevation, and heart rate data — much richer than GPX.'"
+    },
+    {
+      "title": "Step 5 - Upload to Strava",
+      "layout": "split text+image",
+      "output_path": "/home/z/my-project/download/slides/slide_06.html",
+      "task_brief": "STEP SLIDE — Large step number '05' in gradient. Title: 'Upload Your TCX Files to Strava'. Left side: instruction card with 4 steps: 1) 'Go to strava.com and log in (or open the Strava mobile app)' 2) 'Click the orange + button and select Upload Activity' 3) 'Select the .tcx files from the ZIP you downloaded — you can upload up to 25 at a time' 4) 'Strava will process each file and add it to your activity feed'. Right side: use the Strava/cycling app image (https://sfile.chatglm.cn/images-ppt/7dd1f9d39baa.jpg) showing the Strava interface. Add a tip-box: 'On web: drag and drop files directly. On mobile: extract the ZIP first, then select individual .tcx files.' Include a Strava tag pill."
+    },
+    {
+      "title": "Closing - Links & Credits",
+      "layout": "closing",
+      "output_path": "/home/z/my-project/download/slides/slide_07.html",
+      "task_brief": "CLOSING SLIDE — Centered layout. Large title: 'You're All Set!'. Subtitle: 'Your workouts are now on Strava.'. Below that, two cards side by side: Left card labeled 'Tool' with the URL 'https://mapmyrun-to-strava.onrender.com/' in a url-box. Right card labeled 'Source Code' with the GitHub URL 'https://github.com/mitianraushan-oss/mapmyrun-to-strava' in a url-box. Bottom: a small line 'Built with love for the running community' in muted text. Use the gradient accent on the title."
+    }
+  ]
+}

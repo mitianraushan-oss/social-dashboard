@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>Step 1 — Get Your MapMyRun Cookies</title>
+  <link rel="stylesheet" href="global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#FAFAFA;">
+
+<div class="slide" style="display:flex; flex-direction:column; padding:56px 72px 48px 72px;">
+
+  <!-- Header row: step number + title + tag -->
+  <div style="display:flex; align-items:center; gap:20px; margin-bottom:32px;">
+    <span class="step-number">01</span>
+    <span class="step-title">Get Your MapMyRun Cookies</span>
+    <span class="tag tag-mapmyrun" style="margin-left:auto;">MapMyRun</span>
+  </div>
+
+  <!-- Main content: left instructions + right image -->
+  <div style="display:flex; gap:40px; flex:1; min-height:0;">
+
+    <!-- Left: instruction card -->
+    <div style="flex:1; display:flex; flex-direction:column; gap:20px;">
+      <div class="card" style="padding:28px 32px;">
+        <div class="instruction">
+          <span class="bullet-num">1</span>
+          <span class="instruction-text">Go to <code>mapmyrun.com</code> and log in to your account</span>
+        </div>
+        <div class="instruction">
+          <span class="bullet-num">2</span>
+          <span class="instruction-text">Right-click anywhere on the page and select <strong>Inspect</strong> (or press <code>F12</code>)</span>
+        </div>
+        <div class="instruction">
+          <span class="bullet-num">3</span>
+          <span class="instruction-text">Go to the <strong>Application</strong> tab → <strong>Cookies</strong> → copy all cookie values</span>
+        </div>
+      </div>
+
+      <!-- Tip box -->
+      <div class="tip-box">
+        <span class="material-icons" style="font-size:18px; vertical-align:text-bottom; margin-right:6px; color:#E21836;">warning</span>
+        Make sure you are logged in — cookies expire if you log out or the session ends.
+      </div>
+    </div>
+
+    <!-- Right: screenshot image -->
+    <div style="flex:0 0 520px; display:flex; align-items:flex-start;">
+      <div style="width:100%; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.1); border:1px solid #E5E7EB;">
+        <img src="https://sfile.chatglm.cn/images-ppt/4c32d5e96a29.png" alt="Browser DevTools Cookies Panel" style="width:100%; height:380px; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
