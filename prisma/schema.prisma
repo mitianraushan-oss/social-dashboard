@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SocialAccount {
+  id              String   @id @default(cuid())
+  platform        String   // facebook, instagram, linkedin, twitter, reddit
+  platformUserId  String
+  displayName     String
+  accessToken     String
+  refreshToken    String?
+  tokenExpiresAt  DateTime?
+  metadata        String?  // JSON string for extra data
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  content     String
+  imageUrl    String?
+  platforms   String   // JSON array of platform names
+  status      String   @default("draft") // draft, publishing, published, failed
+  results     String?  // JSON array of per-platform results
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
